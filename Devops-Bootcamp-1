@@ -1,0 +1,41 @@
+# References and Checklists: 
+# 1. https://github.com/amigo-nishant/getting-started.git (READ instructions first before deploying)
+# 2. https://www.devops-playbook.com/post/understanding-docker-and-containers 
+# 3. https://www.youtube.com/watch?v=V9ppLv71DMI
+# ++++++++++++++++++++
+# INTRODUCTION - should cover one point on why are you here?
+# INSTALLATION OF TOOLS - Docker, VS code, WSL
+# ++++++++++++++++++++
+# Checklist
+# 1. Download Docker Desktop Windows.
+# 2. Download VSCode Windows.
+# 3. Open VSCode Windows.
+# 4. Download VSCode extension: WSL.
+# 5. Download hypervisor.
+# ++++++++++++++++++++
+# =======================
+# Docker Terminology 
+# =======================
+# ++++++++++++++++++++
+# IN-DEPTH EXPLANATION :
+# Dockerfile : A text file with all instructions to build the image.
+# Docker Image: A template which consists of code * dependencies
+# Docker container : A instance of the application
+# Docker volume : storage 
+# ++++++++++++++++++++
+# GIT
+# how to clone
+# how to commit
+# how to merge
+# ++++++++++++++++++++
+# base image: this will tell OS : ubuntu
+# RUN apt-get install wget
+# workdir /app
+# copy file : /src/*.c /app
+# RUN apt-get install wget
+# ENTRYPOINT : python helloworld.py
+# ++++++++++++++++++++
+# git clone <repo>
+# ++++++++++++++++++++
+# POWERSHELL COMMANDS TO USE :
+# powershell step-1: ls
