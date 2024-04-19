@@ -18,6 +18,9 @@ To-do now:
 PowerShell commands to use (copy and paste is a must here & Requirements of Real-time commands):
   1) docker ps -a # checks the Container ID, Image, Command, Created, Status, Ports, and Names 
   2) docker rm <container_name> # Remove a stopped container
+  3) docker ps # checks the Container ID, Image, Command, Created, Status, Ports, and Names 
+  4) docker images # It will show the Repository, Tag, Image, Id, Created & Size
+  5) docker rm # rm means to remove 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Description & Notes: 
 # 1. What is a VM(Virtual Machine)?
