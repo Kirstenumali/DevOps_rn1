@@ -10,7 +10,7 @@ To-do now:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  Deployment: 
   1. First, open the Docker Desktop (dd).  # Docker Desktop and Windows Power Shell is a must as a tab  
-  2. Down part of the Docker Desktop images, there is a "What is a container?" # It will load out in the learning center, and then it will show "Status: Downloaded newer image for docker"  
+  2. Down part of the Docker Desktop images, there is a "What is a container?" # You can be on any folder as well. However, using the PowerShell/terminal is required for this. It will load out in the learning center, and then it will show "Status: Downloaded newer image for docker"  
   3. (PS: docker ps -a) Created 1 Docker Desktop container # Moreover, 4. Docker Architecture  in this link https://www.devops-playbook.com/post/understanding-docker-and-containers
   4. (PS: docker rm <container_name>) Then, delete the container # probably identify the "error" that was shown 
                                                                                               "Done!"
