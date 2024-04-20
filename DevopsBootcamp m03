@@ -5,3 +5,62 @@
 # 4. https://education.github.com/git-cheat-sheet-education.pdf # commands for the GitHub link are here; if you are having trouble with commands, you can check some commands here. Read first and understand. 
 # 5. https://www.youtube.com/watch?v=i1cvg79Pz-E&list=PL2mVe-Z-lAXMUwv-fhbBOCtpJA_nk-OeK&index=3 # This is the video of this repository/file
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Description:
+Docker Labs:
+Basic commands in the docker:
+
+Code -- to build == Dockerfile
+docker build -t getting-started
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Deployment: 
+1. Open VS Code
+2. (PS: docker --help)                              # It will show common Commands like run, exec, ps, build, pull, push, login, logout
+3. You will see the h 3 circle wire statue. Then, click 3 dots(...) to clone
+4. Click Clone URL
+5. Create a new folder 
+6. Name your folder 
+6. Click "Select as Repository" 
+7. Click "Yes, I trust the authors"                      # Do you trust the authors of the files in this folder?  
+8. Click "Open"
+9. Create a file named Dockerfile above j.son
+10. Text code of Dockerfile (Paste this code): 
++
+FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
++
+11. (PS: ls)
+12. (PS: docker build -t getting-started) check your Docker desktop Images. 
+13. 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Deployment: 
+1. To use, Open the VS Code 
+2. You will see the wire with 3 circles click 3 dots(...) to clone
+3. Create a new folder
+4. Name your folder 
+5. Click "Select as Repository" 
+6. Do you trust the authors of the files in this folder?  Click "Yes, I trust the authors"
+6. Click "Open"
+7. 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Powershell commands:
+1. docker --help                                       # (optional)
+2. ls                                                  # You can see the files 
+3. touch Dockerfile
+3. docker build -t getting-started .                 # download complete is here
+4. docker run -dp 127.0.0.1:3000:3000 getting-started
+5. clear                                               # check your code clearly
+6. docker images                                       
+7. docker run -dp 127.0.0.1:3000:3000 getting-started
+8. docker ps
+9. Container ports open it. run the website in chrome. 
+10. In the src/static/js/app.js file, update line 56 to use the new empty text.
++
+<p className="text-center">No items yet! Add one above!</p>
+<p className="text-center">You have no todo items yet! Add one above!</p>
++
+                 "Changed"
+11. docker run -dp 127.0.0.1:3000:3000 getting-started # after check the website change it to "localhost:3001"
