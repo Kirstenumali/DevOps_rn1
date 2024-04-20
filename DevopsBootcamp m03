@@ -1,6 +1,6 @@
 # References: 
 # 1. https://docs.docker.com/get-started/docker_cheatsheet.pdf # You can use tons of commands here in your docker PowerShell vs. PowerShell, git bash...**Note** you should be in your repository first!*** ctto from Scrinavas reference 
-# 2. https://github.com/amigo-nishant/Docker-Notes # Read all of this before using put it as 1
+# 2. https://github.com/amigo-nishant/Docker-Notes # Read all of this before using put it as 1 in this room 
 # 3. https://www.youtube.com/watch?v=V9ppLv71DMI&list=PL2mVe-Z-lAXMUwv-fhbBOCtpJA_nk-OeK # This is the playlist of the video.
 # 4. https://education.github.com/git-cheat-sheet-education.pdf # commands for the GitHub link are here; if you are having trouble with commands, you can check some commands here. Read first and understand. 
 # 5. https://www.youtube.com/watch?v=i1cvg79Pz-E&list=PL2mVe-Z-lAXMUwv-fhbBOCtpJA_nk-OeK&index=3 # This is the video of this repository/file
@@ -17,7 +17,7 @@ Deployment:
 8. Click "Open"
 9. Create a file named Dockerfile above j.son
 10. Dockerfile/text editor (Paste this code): 
-code:
+Code:
 FROM node:18-alpine
 WORKDIR /app
 COPY . .
@@ -26,43 +26,51 @@ CMD ["node", "src/index.js"]
 EXPOSE 3000
 ##########################################
 # 11. (PS: ls)
-# 12. (PS: docker build -t getting-started) check your Docker desktop Images. 
+# 12. (PS: docker build -t getting-started) check your Docker Desktop Images. 
 # 13. (PS: touch Dockerfile)
 # 14. (PS: docker build -t getting-started)                 # download complete is here
 # 15. (PS: docker run -dp 127.0.0.1:3000:3000 getting-started)
 # 16. (PS: clear)                                               # check your code clearly
 # 17. (PS: docker images)                                     
 # 18. (PS: docker run -dp 127.0.0.1:3000:3000 getting-started)
-# 19. (PS: docker ps) # The Docker desktop is on the "Port"; open it. Then, Run the website in Chrome. You will be satisfied with the app. You can use it. 
+# 19. (PS: docker ps) # The Docker desktop is on the "Port"; open it. Then, Run the website in Chrome. I just wanted to let you know that you will be satisfied with the app. You can use it. 
 # 20. code in the text editor # In the src/static/js/app.js file, update line 56. 
 code: 
 #<p className="text-center">No items yet! Add one above!</p>
 #<p className="text-center">You have no todo items yet! Add one above!</p>
                                 "Changed Status"
-# 21. Delete the old container, then run this \1) (PS: docker ps) 
-# 2) (PS:   docker stop <the-container-id>) 
+# 21. First, delete the old container. 
+# 22. (PS: docker ps) 
+# 23. (PS: docker stop <the-container-id>) 
+# 24. (PS: docker rm <the-container-id
+                          "No Containers"
+# 25. (PS: docker ps -a) # to check your frontend; status
 
-# 11. After checking the website, change it to "localhost:3001".
-# 12. 
+# 26. Run the program now:  
+# 27. (PS: docker run -dp 127.0.0.1:3000:3000 getting-started)
+# 28. (PS: docker ps -a) # to checking you're after running is a must
+# 29. After checking the website, change it to "localhost:3001".
+
+# 30. Docker Hub Account is a must                             # Currently logged in. 
+# 31. Create your repository 
+# 32. (PS: docker tag getting-started unis771/getting-started) #   docker tag getting-started YOUR-USER-NAME/getting-started,  # optional is this   docker tag getting-started unis771/getting-started:0.0.0
+# 33. (PS: docker push unis771/getting-started) #   docker push YOUR-USER-NAME/getting-started
+                                                         "Apply no containers" 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #Powershell commands:
-# 1. docker --help                                       # (optional)
-#2. ls                                                  # You can see the files 
-#3. touch Dockerfile
-#3. docker build -t getting-started .                 # download complete is here
-#4. docker run -dp 127.0.0.1:3000:3000 getting-started
-#5. clear                                               # check your code clearly
-#6. docker images                                       
-#7. docker run -dp 127.0.0.1:3000:3000 getting-started
-#8. docker ps
-#9. Container ports open it. run the website in chrome. 
-#10. In the src/static/js/app.js file, update line 56 to use the new empty text.
-#+
-#<p className="text-center">No items yet! Add one above!</p>
-#<p className="text-center">You have no todo items yet! Add one above!</p>
-#+
-#                 "Changed"
-#11. docker run -dp 127.0.0.1:3000:3000 getting-started # after check the website change it to "localhost:3001"
+# 1. docker --help                                                               # (optional)
+# 2. ls                                                                          # You can see the files 
+# 3. touch Dockerfile
+# 4. docker build -t getting-started .                                           # download complete is here
+# 5. docker run -dp 127.0.0.1:3000:3000 getting-started
+# 6. clear                                                                       # check your code clearly
+# 7. docker images                                       
+# 8. docker run -dp 127.0.0.1:3000:3000 getting-started
+# 9. docker ps
+# 10. docker run -dp 127.0.0.1:3000:3000 getting-started                         # after check the website change it to "localhost:3001"
+# 12. docker logout 
+13. docker login # it will ask for your username and password
+14.  docker login <link>                                                         # it will ask your username and password
 #####################################################################################################################################################################################
 Description & Notes:
 Docker Labs:
@@ -70,4 +78,14 @@ Basic commands in the docker:
 
 Code -- to build == Dockerfile
 docker build -t getting-started
+
+docker push -- pushing images to the repository 
+
+docker tag getting-started unis771/getting started 
+
+git pull 
+
+docker pull unis771/getting started:0.0.0    # if you create a tag it makes it. collon then the tag name 
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
